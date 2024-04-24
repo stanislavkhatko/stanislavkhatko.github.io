@@ -20,7 +20,7 @@ Welcome to my corner of the web! I'm Stan, a Full-stack web engineer living a no
 
 Software was something I fall in love since I got my first PC, I was the one to know the right program and solve computer problem instead of spending hours gaming as my friends. I should say it made me a problem solver back then.
 
-Despite financial (Accounting) and after a Management education I found myself in web development and it was a pushing dreaming power since then.
+Despite financial (Accounting) and after a Management education I found myself in web development, and it was a pushing dreaming power since then.
 
 I write on <a href='#'>JavaScript</a> lately, though got PHP background. 
 
