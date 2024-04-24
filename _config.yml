@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Stanislav
-middle_name: A.
+middle_name:
 last_name: Khatko
 email: stanislavkhatko@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -106,7 +106,7 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Feel free to reach me anywhere
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -125,8 +125,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: mandry # blog_name will be displayed in your blog page
-blog_description: Conding, programming and a nomad life.
+blog_name: wanders # blog_name will be displayed in your blog page
+blog_description: Conding, programming and nomad life.
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -141,7 +141,7 @@ related_blog_posts:
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
   repo: stanislavkhatko/stanislavkhatko.github.io # <your-github-user-name>/<your-github-repo-name>
-  repo_id: # leave empty or specify your repo_id (see https://giscus.app/)
+  repo_id: R_kgDOLyWGog # leave empty or specify your repo_id (see https://giscus.app/)
   category: Comments # name of the category under which discussions will be created
   category_id: # leave empty or specify your category_id (see https://giscus.app/)
   mapping: title # identify discussions by post title
@@ -183,7 +183,7 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 

@@ -1,25 +1,30 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: A <a href='/blog'>nomad</a> who loves to hide in coding.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: avatar_scaled_khatko.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Life is short, and sometimes steep. Do what you dream about, live as you feel it.</p>
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Welcome to my corner of the web! I'm Stan, a Full-stack web engineer living a nomad live with family.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Software was something I fall in love since I got my first PC, I was the one to know the right program and solve computer problem instead of spending hours gaming as my friends. I should say it made me a problem solver back then.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Despite financial (Accounting) and after a Management education I found myself in web development and it was a pushing dreaming power since then.
+
+I write write on JavaScript lately, though got big PHP background. 
+
+When I'm not coding and usually on weekends, you can find me visiting many <a href='/blog'>places</a>. I believe in people, and I strive to be a good particle of the world.
+
+Feel free to explore my <a href='/blog'>portfolio</a> to get a glimpse into my world. If you have any questions or would like to collaborate, don't hesitate to reach out!
+
