@@ -70,7 +70,7 @@ Forms for project and report creation
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/onstruc/report_template.jpg" title="report" class="img-fluid rounded z-depth-1" %}
-    </div>
+    </div> 
 </div>
 <div class="caption">
     Generated report example
