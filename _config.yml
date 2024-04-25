@@ -125,8 +125,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: wanders # blog_name will be displayed in your blog page
-blog_description: Conding, programming and nomad life.
+blog_name: Journal # blog_name will be displayed in your blog page
+blog_description: Coding, programming and nomad life.
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -281,8 +281,8 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: ["formatting", "images", "links", "math", "code"] # these tags will be displayed on the front page of your blog
-display_categories: ["blockquotes"] # these categories will be displayed on the front page of your blog
+display_tags: ["php", "javascript", "code", "wanders"] # these tags will be displayed on the front page of your blog
+display_categories: [] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

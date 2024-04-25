@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: A <a href='/blog'>nomad</a> who loves to hide in coding.
+subtitle: A <a href='/blog/tags/wanders'>nomad</a> living in coding.
 
 profile:
   align: right
@@ -16,14 +16,14 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Welcome to my corner of the web! I'm Stan, a Full-stack web engineer living a nomad live with family.
+Welcome to my corner of the web! I'm Stan, a Full-stack web engineer from <a href='/blog/tag/ukraine'>Ukraine</a> 🇺🇦, living a nomad live with family.
 
 Software was something I fall in love since I got my first PC, I was the one to know the right program and solve computer problem instead of spending hours gaming as my friends. I should say it made me a problem solver back then.
 
 Despite financial (Accounting) and after a Management education I found myself in web development, and it was a pushing dreaming power since then.
 
-I write on <a href='#'>JavaScript</a> lately, though got PHP background.
+I love <a href='/blog/tag/javascript'>JavaScript</a>, though got major <a href='/blog/tag/php'>PHP</a> background.
 
-When I'm not coding and usually on weekends, you can find me visiting many <a href='/blog'>places</a>. I believe in people, and I strive to be a good particle of the world.
+When I'm not coding and usually on weekends, you can find me visiting <a href='/blog/tag/wanders'>places</a> around the globe. I believe in people, and I strive to be a good particle of the world.
 
 Feel free to explore my <a href='/projects'>portfolio</a> to get a glimpse into my world. If you have any questions or would like to collaborate, don't hesitate to reach out!
