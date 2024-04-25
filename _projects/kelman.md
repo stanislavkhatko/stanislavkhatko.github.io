@@ -5,13 +5,15 @@ description: <a href='https://kelman.law/map/'>https://kelman.law/map/</a>
 img: assets/img/kelman/front.png
 importance: 3
 category: work
+images:
+  compare: true
 ---
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/kelman/front.jpg" title="Front page" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+<img-comparison-slider hover="hover">
+  {% include figure.liquid path="assets/img/kelman/front.jpg" class="img-fluid rounded z-depth-1" slot="first" %}
+  {% include figure.liquid path="assets/img/kelman/front-dark.png" class="img-fluid rounded z-depth-1" slot="second" %}
+</img-comparison-slider>
+
 <div class="caption">
     Front page of cryptocurrency support by a state
 </div>

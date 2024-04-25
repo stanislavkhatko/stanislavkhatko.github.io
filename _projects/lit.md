@@ -9,8 +9,8 @@ category: work
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/lit/front.png" title="Front page" class="img-fluid rounded z-depth-1" %}
-    </div>
+        {% include figure.liquid loading="eager" zoomable="" path="assets/img/lit/front.png" title="Front page" class="img-fluid rounded z-depth-1" %}
+    </div> 
 </div>
 <div class="caption">
     Front page of creative web studio
