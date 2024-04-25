@@ -7,7 +7,6 @@ importance: 1
 category: work
 ---
 
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/lit/front.png" title="Front page" class="img-fluid rounded z-depth-1" %}
@@ -16,7 +15,6 @@ category: work
 <div class="caption">
     Front page of creative web studio
 </div>
-
 
 <div class="row">
     <div class="col-sm mt-4 mt-md-0">
@@ -30,7 +28,6 @@ category: work
 <div class="caption">
 Front page
 </div>
-
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -47,7 +44,6 @@ Front page
 <div class="caption">
 Front page sections
 </div>
-
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -74,7 +70,6 @@ Front page sections
 Team page
 </div>
 
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/lit/menu.png" title="Menu" class="img-fluid rounded z-depth-1" %}
@@ -83,7 +78,6 @@ Team page
 <div class="caption">
     Menu popup
 </div>
-
 
 <div class="row">
     <div class="col-sm mt-4 mt-md-0">
@@ -113,4 +107,3 @@ Single project
 <div class="caption">
 Projects page
 </div>
-

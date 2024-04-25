@@ -7,7 +7,6 @@ importance: 2
 category: work
 ---
 
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/onstruc/front-2.jpg" title="Front page" class="img-fluid rounded z-depth-1" %}
@@ -17,7 +16,6 @@ category: work
     Front page of photo documentation application
 </div>
 
-
 <div class="row">
     <div class="col-sm mt-0 mt-md-0">
         {% include video.liquid path="assets/video/onstruc.mp4" class="img-fluid rounded z-depth-1" controls=true %}
@@ -26,7 +24,6 @@ category: work
 <div class="caption">
     Onstruc presentation
 </div>
-
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -42,8 +39,6 @@ category: work
 <div class="caption">
 Onstruc dashboard for management projects and documentation
 </div>
-
-
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -66,7 +61,6 @@ Onstruc dashboard for management projects and documentation
 Forms for project and report creation
 </div>
 
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/onstruc/report_template.jpg" title="report" class="img-fluid rounded z-depth-1" %}
@@ -75,5 +69,3 @@ Forms for project and report creation
 <div class="caption">
     Generated report example
 </div>
-
-

@@ -32,7 +32,6 @@ category: work
     Artworks catalog
 </div>
 
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/bearte/artists.png" title="artists" class="img-fluid rounded z-depth-1" %}
@@ -41,6 +40,3 @@ category: work
 <div class="caption"> 
     Artists of marketplace
 </div>
-
-
-

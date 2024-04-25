@@ -16,7 +16,6 @@ category: work
     Front page of cryptocurrency support by a state
 </div>
 
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/kelman/light.png" title="article" class="img-fluid rounded z-depth-1" %}
@@ -40,7 +39,6 @@ Light theme
 <div class="caption">
     Stage law description
 </div>
-
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

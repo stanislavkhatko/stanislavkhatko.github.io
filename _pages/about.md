@@ -22,9 +22,8 @@ Software was something I fall in love since I got my first PC, I was the one to 
 
 Despite financial (Accounting) and after a Management education I found myself in web development, and it was a pushing dreaming power since then.
 
-I write on <a href='#'>JavaScript</a> lately, though got PHP background. 
+I write on <a href='#'>JavaScript</a> lately, though got PHP background.
 
 When I'm not coding and usually on weekends, you can find me visiting many <a href='/blog'>places</a>. I believe in people, and I strive to be a good particle of the world.
 
 Feel free to explore my <a href='/projects'>portfolio</a> to get a glimpse into my world. If you have any questions or would like to collaborate, don't hesitate to reach out!
-

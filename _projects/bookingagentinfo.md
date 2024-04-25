@@ -17,7 +17,6 @@ related_publications: false
     Front page of news website
 </div>
 
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/bookingagentinfo/article.png" title="article" class="img-fluid rounded z-depth-1" %}
@@ -42,4 +41,3 @@ Implemented design for front, listing and article pages.
 <div class="caption">
     Subscription with mailchimp form
 </div>
-

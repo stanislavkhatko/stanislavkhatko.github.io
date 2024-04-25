@@ -41,7 +41,7 @@
   const objectFromMap = function (map) {
     const object = Array.from(map).reduce(
       (object, [key, value]) => Object.assign(object, { [key]: value }), // Be careful! Maps can have non-String keys; object literals can't.
-      {}
+      {},
     );
     return object;
   };
@@ -311,7 +311,7 @@
         this.citations.map((citationKey) => {
           const entry = this.bibliography.get(citationKey);
           return [citationKey, entry];
-        })
+        }),
       );
     }
 
@@ -383,7 +383,7 @@
       if (!hasOldStyle) continue;
       if (hasNewStyle) {
         console.warn(
-          `Author ${author.author} has both old-style ("affiliation" & "affiliationURL") and new style ("affiliations") affiliation information!`
+          `Author ${author.author} has both old-style ("affiliation" & "affiliationURL") and new style ("affiliations") affiliation information!`,
         );
       } else {
         let newAffiliation = {
@@ -409,7 +409,7 @@
       }
     } else {
       console.error(
-        "You added a frontmatter tag but did not provide a script tag with front matter data in it. Please take a look at our templates."
+        "You added a frontmatter tag but did not provide a script tag with front matter data in it. Please take a look at our templates.",
       );
     }
     return {};
@@ -1048,11 +1048,11 @@
           .map((affiliation) =>
             affiliation.url
               ? `<a class="affiliation" href="${affiliation.url}">${affiliation.name}</a>`
-              : `<span class="affiliation">${affiliation.name}</span>`
+              : `<span class="affiliation">${affiliation.name}</span>`,
           )
           .join(", ")}
         </p>
-      `
+      `,
         )
         .join("")}
     </div>
@@ -1196,7 +1196,7 @@
               e,
               t,
               n,
-              r
+              r,
             );
           }
           return n[o].exports;
@@ -1940,7 +1940,7 @@
                   "([!-\\[\\]-\u2027\u202A-\uD7FF\uF900-\uFFFF]" + // single codepoint
                   "|[\uD800-\uDBFF][\uDC00-\uDFFF]" + // surrogate pair
                   "|\\\\(?:[a-zA-Z]+|[^\uD800-\uDFFF])" + // function name
-                  ")"
+                  ")",
               );
 
               /*
@@ -2987,7 +2987,7 @@
                           body: textordArray,
                           type: "text",
                         },
-                        this.mode
+                        this.mode,
                       );
 
                       var colorNode = new _ParseNode2.default(
@@ -2997,7 +2997,7 @@
                           value: [textNode],
                           type: "color",
                         },
-                        this.mode
+                        this.mode,
                       );
 
                       this.consume();
@@ -3090,7 +3090,7 @@
                             sup: superscript,
                             sub: subscript,
                           },
-                          this.mode
+                          this.mode,
                         );
                       } else {
                         // Otherwise return the original body
@@ -3146,7 +3146,7 @@
                             left: left.value.value,
                             right: right.value.value,
                           },
-                          this.mode
+                          this.mode,
                         );
                       } else if (func === "\\begin") {
                         // begin...end is similar to left...right
@@ -3172,7 +3172,7 @@
                         if (end.value.name !== envName) {
                           throw new _ParseError2.default(
                             "Mismatch: \\begin{" + envName + "} matched " + "by \\end{" + end.value.name + "}",
-                            endNameToken
+                            endNameToken,
                           );
                         }
                         result.position = end.position;
@@ -3188,7 +3188,7 @@
                             size: _utils2.default.indexOf(Parser.sizeFuncs, func) + 1,
                             value: _body,
                           },
-                          this.mode
+                          this.mode,
                         );
                       } else if (_utils2.default.contains(Parser.styleFuncs, func)) {
                         // If we see a styling function, parse out the implicit body
@@ -3202,7 +3202,7 @@
                             style: func.slice(1, func.length - 5),
                             value: _body2,
                           },
-                          this.mode
+                          this.mode,
                         );
                       } else if (func in Parser.oldFontFuncs) {
                         var style = Parser.oldFontFuncs[func];
@@ -3216,7 +3216,7 @@
                               style: style,
                               body: new _ParseNode2.default("ordgroup", _body3, this.mode),
                             },
-                            this.mode
+                            this.mode,
                           );
                         } else {
                           return new _ParseNode2.default(
@@ -3225,7 +3225,7 @@
                               font: style,
                               body: new _ParseNode2.default("ordgroup", _body3, this.mode),
                             },
-                            this.mode
+                            this.mode,
                           );
                         }
                       } else if (func === "\\color") {
@@ -3242,7 +3242,7 @@
                             color: color.result.value,
                             value: _body4,
                           },
-                          this.mode
+                          this.mode,
                         );
                       } else if (func === "$") {
                         if (this.mode === "math") {
@@ -3260,7 +3260,7 @@
                             style: "text",
                             value: _body5,
                           },
-                          "math"
+                          "math",
                         );
                       } else {
                         // Defer to parseFunction if it's not a function we handle
@@ -3636,7 +3636,7 @@
                         return new ParseFuncOrArgument(
                           new _ParseNode2.default(_symbols2.default[this.mode][nucleus.text].group, nucleus.text, this.mode, nucleus),
                           false,
-                          nucleus
+                          nucleus,
                         );
                       } else if (this.mode === "text" && _unicodeRegexes.cjkRegex.test(nucleus.text)) {
                         this.consume();
@@ -4834,7 +4834,7 @@
                     ],
                     "shift",
                     -supShift,
-                    options
+                    options,
                   );
                 } else {
                   supShift = Math.max(supShift, minSupShift, supm.depth + 0.25 * metrics.xHeight);
@@ -4960,7 +4960,7 @@
                     ],
                     "individualShift",
                     null,
-                    options
+                    options,
                   );
                 } else {
                   // Rule 15d
@@ -4996,7 +4996,7 @@
                     ],
                     "individualShift",
                     null,
-                    options
+                    options,
                   );
                 }
 
@@ -5034,7 +5034,7 @@
                 return (0, _buildCommon.makeSpan)(
                   ["mord"].concat(newOptions.sizingClasses(options)),
                   [leftDelim, (0, _buildCommon.makeSpan)(["mfrac"], [frac]), rightDelim],
-                  options
+                  options,
                 );
               };
 
@@ -5357,7 +5357,7 @@
                       ],
                       "top",
                       top,
-                      options
+                      options,
                     );
                   } else if (!subGroup) {
                     bottom = base.depth + baseShift;
@@ -5384,7 +5384,7 @@
                       ],
                       "bottom",
                       bottom,
-                      options
+                      options,
                     );
                   } else if (!supGroup && !subGroup) {
                     // This case probably shouldn't occur (this would mean the
@@ -5429,7 +5429,7 @@
                       ],
                       "bottom",
                       bottom,
-                      options
+                      options,
                     );
                   }
 
@@ -5543,7 +5543,7 @@
                   ],
                   "firstBaseline",
                   null,
-                  options
+                  options,
                 );
 
                 return (0, _buildCommon.makeSpan)(["mord", "overline"], [vlist], options);
@@ -5567,7 +5567,7 @@
                   ],
                   "top",
                   innerGroup.height,
-                  options
+                  options,
                 );
 
                 return (0, _buildCommon.makeSpan)(["mord", "underline"], [vlist], options);
@@ -5643,7 +5643,7 @@
                     ],
                     "firstBaseline",
                     null,
-                    options
+                    options,
                   );
                   body.children[0].children[0].classes.push("svg-align");
                 }
@@ -5785,7 +5785,7 @@
                         innerDepth,
                         middleDelim.isMiddle.options,
                         group.mode,
-                        []
+                        [],
                       );
                       // Add back spaces shifted into the delimiter
                       var spaces = spliceSpaces(middleDelim.children, 0);
@@ -5965,7 +5965,7 @@
                     ],
                     "firstBaseline",
                     null,
-                    options
+                    options,
                   );
                 } else {
                   accentBody = _stretchy2.default.svgSpan(group, options);
@@ -5980,7 +5980,7 @@
                     ],
                     "firstBaseline",
                     null,
-                    options
+                    options,
                   );
 
                   var styleSpan = accentBody.children[0].children[0].children[1];
@@ -6050,7 +6050,7 @@
                     ],
                     "firstBaseline",
                     null,
-                    options
+                    options,
                   );
                   vlist.children[0].children[0].children[1].classes.push("svg-align");
                 } else {
@@ -6062,7 +6062,7 @@
                     ],
                     "bottom",
                     body.depth + 0.1 + braceBody.height,
-                    options
+                    options,
                   );
                   vlist.children[0].children[0].children[0].classes.push("svg-align");
                 }
@@ -6090,7 +6090,7 @@
                       ],
                       "firstBaseline",
                       null,
-                      options
+                      options,
                     );
                   } else {
                     vlist = _buildCommon2.default.makeVList(
@@ -6104,7 +6104,7 @@
                       ],
                       "bottom",
                       vSpan.depth + 0.2 + supSubGroup.height,
-                      options
+                      options,
                     );
                   }
                 }
@@ -6128,7 +6128,7 @@
                   ],
                   "bottom",
                   accentBody.height + kern,
-                  options
+                  options,
                 );
 
                 vlist.children[0].children[0].children[0].classes.push("svg-align");
@@ -6175,7 +6175,7 @@
                   ],
                   "individualShift",
                   null,
-                  options
+                  options,
                 );
 
                 if (label !== "fbox") {
@@ -6238,7 +6238,7 @@
                     ],
                     "individualShift",
                     null,
-                    options
+                    options,
                   );
                 } else {
                   vlist = _buildCommon2.default.makeVList(
@@ -6256,7 +6256,7 @@
                     ],
                     "individualShift",
                     null,
-                    options
+                    options,
                   );
                 }
 
@@ -6670,9 +6670,9 @@
                       "mtr",
                       row.map(function (cell) {
                         return new _mathMLTree2.default.MathNode("mtd", [buildGroup(cell, options)]);
-                      })
+                      }),
                     );
-                  })
+                  }),
                 );
               };
 
@@ -7263,7 +7263,7 @@
                   (0, _buildCommon.makeSpan)(["delimsizing", "size" + size], [inner], options),
                   _Style2.default.TEXT,
                   options,
-                  classes
+                  classes,
                 );
                 if (center) {
                   centerSpan(span, options, _Style2.default.TEXT);
@@ -7286,7 +7286,7 @@
 
                 var inner = (0, _buildCommon.makeSpan)(
                   ["delimsizinginner", sizeClass],
-                  [(0, _buildCommon.makeSpan)([], [_buildCommon2.default.makeSymbol(symbol, font, mode)])]
+                  [(0, _buildCommon.makeSpan)([], [_buildCommon2.default.makeSymbol(symbol, font, mode)])],
                 );
 
                 // Since this will be passed into `makeVList` in the end, wrap the element
@@ -7792,7 +7792,7 @@
                   //    x^{x^{\left(\rule{0.1em}{0.68em}\right)}}
                   // in TeX and KaTeX)
                   (maxDistFromAxis / 500) * delimiterFactor,
-                  2 * maxDistFromAxis - delimiterExtend
+                  2 * maxDistFromAxis - delimiterExtend,
                 );
 
                 // Finally, we defer to `makeCustomSizedDelim` with our calculated total
@@ -8275,7 +8275,7 @@
                         style: style,
                         value: [cell],
                       },
-                      parser.mode
+                      parser.mode,
                     );
                   }
                   row.push(cell);
@@ -8386,7 +8386,7 @@
                   };
                   res = parseArray(context.parser, res, dCellStyle(context.envName));
                   return res;
-                }
+                },
               );
 
               // The matrix environments of amsmath builds on the array environment
@@ -8413,7 +8413,7 @@
                       left: delimiters[0],
                       right: delimiters[1],
                     },
-                    context.mode
+                    context.mode,
                   );
                 }
                 return res;
@@ -8455,7 +8455,7 @@
                     left: "\\{",
                     right: ".",
                   },
-                  context.mode
+                  context.mode,
                 );
                 return res;
               });
@@ -10721,7 +10721,7 @@
                     body: body,
                     index: index,
                   };
-                }
+                },
               );
 
               // Non-mathy text, possibly in a font
@@ -10750,7 +10750,7 @@
                     body: ordargument(body),
                     style: textFunctionStyles[context.funcName],
                   };
-                }
+                },
               );
 
               // A two-argument custom color
@@ -10770,7 +10770,7 @@
                     color: color.value,
                     value: ordargument(body),
                   };
-                }
+                },
               );
 
               // \color is handled in Parser.js's parseImplicitGroup
@@ -10782,7 +10782,7 @@
                   greediness: 3,
                   argTypes: ["color"],
                 },
-                null
+                null,
               );
 
               // An overline
@@ -10797,7 +10797,7 @@
                     type: "overline",
                     body: body,
                   };
-                }
+                },
               );
 
               // An underline
@@ -10812,7 +10812,7 @@
                     type: "underline",
                     body: body,
                   };
-                }
+                },
               );
 
               // A box of the width and height
@@ -10833,7 +10833,7 @@
                     width: width.value,
                     height: height.value,
                   };
-                }
+                },
               );
 
               // TODO: In TeX, \mkern only accepts mu-units, and \kern does not accept
@@ -10849,7 +10849,7 @@
                     type: "kern",
                     dimension: args[0].value,
                   };
-                }
+                },
               );
 
               // A KaTeX logo
@@ -10862,7 +10862,7 @@
                   return {
                     type: "katex",
                   };
-                }
+                },
               );
 
               defineFunction(
@@ -10876,7 +10876,7 @@
                     type: "phantom",
                     value: ordargument(body),
                   };
-                }
+                },
               );
 
               // Math class commands except \mathop
@@ -10892,7 +10892,7 @@
                     mclass: "m" + context.funcName.substr(5),
                     value: ordargument(body),
                   };
-                }
+                },
               );
 
               // Build a relation by placing one symbol on top of another
@@ -10914,7 +10914,7 @@
                       symbol: false,
                       value: ordargument(bottom),
                     },
-                    bottom.mode
+                    bottom.mode,
                   );
 
                   var supsub = new _ParseNode2.default(
@@ -10924,7 +10924,7 @@
                       sup: top,
                       sub: null,
                     },
-                    top.mode
+                    top.mode,
                   );
 
                   return {
@@ -10932,7 +10932,7 @@
                     mclass: "mrel",
                     value: [supsub],
                   };
-                }
+                },
               );
 
               // \mod-type functions
@@ -10947,7 +10947,7 @@
                     modType: "bmod",
                     value: null,
                   };
-                }
+                },
               );
 
               defineFunction(
@@ -10962,7 +10962,7 @@
                     modType: context.funcName.substr(1),
                     value: ordargument(body),
                   };
-                }
+                },
               );
 
               // Extra data needed for the delimiter handler down below
@@ -11107,7 +11107,7 @@
                     color: "katex-" + context.funcName.slice(1),
                     value: ordargument(body),
                   };
-                }
+                },
               );
 
               // There are 2 flags for operators; whether they produce limits in
@@ -11160,7 +11160,7 @@
                     symbol: false,
                     body: context.funcName,
                   };
-                }
+                },
               );
 
               // Limits, not symbols
@@ -11176,7 +11176,7 @@
                     symbol: false,
                     body: context.funcName,
                   };
-                }
+                },
               );
 
               // No limits, symbols
@@ -11192,7 +11192,7 @@
                     symbol: true,
                     body: context.funcName,
                   };
-                }
+                },
               );
 
               // Limits, symbols
@@ -11223,7 +11223,7 @@
                     symbol: true,
                     body: context.funcName,
                   };
-                }
+                },
               );
 
               // \mathop class command
@@ -11240,7 +11240,7 @@
                     symbol: false,
                     value: ordargument(body),
                   };
-                }
+                },
               );
 
               // Fractions
@@ -11298,7 +11298,7 @@
                     rightDelim: rightDelim,
                     size: size,
                   };
-                }
+                },
               );
 
               // Left and right overlap functions
@@ -11314,7 +11314,7 @@
                     type: context.funcName.slice(1),
                     body: body,
                   };
-                }
+                },
               );
 
               // Delimiter functions
@@ -11357,7 +11357,7 @@
                     mclass: delimiterSizes[context.funcName].mclass,
                     value: delim.value,
                   };
-                }
+                },
               );
 
               defineFunction(
@@ -11374,7 +11374,7 @@
                     type: "leftright",
                     value: delim.value,
                   };
-                }
+                },
               );
 
               defineFunction(
@@ -11392,14 +11392,14 @@
                     type: "middle",
                     value: delim.value,
                   };
-                }
+                },
               );
 
               // Sizing functions (handled in Parser.js explicitly, hence no handler)
               defineFunction(
                 ["\\tiny", "\\scriptsize", "\\footnotesize", "\\small", "\\normalsize", "\\large", "\\Large", "\\LARGE", "\\huge", "\\Huge"],
                 0,
-                null
+                null,
               );
 
               // Style changing functions (handled in Parser.js explicitly, hence no
@@ -11444,7 +11444,7 @@
                     font: func.slice(1),
                     body: body,
                   };
-                }
+                },
               );
 
               // Accents
@@ -11479,7 +11479,7 @@
 
                   var isStretchy = !_utils2.default.contains(
                     ["\\acute", "\\grave", "\\ddot", "\\tilde", "\\bar", "\\breve", "\\check", "\\hat", "\\vec", "\\dot"],
-                    context.funcName
+                    context.funcName,
                   );
 
                   var isShifty = !isStretchy || _utils2.default.contains(["\\widehat", "\\widetilde"], context.funcName);
@@ -11492,7 +11492,7 @@
                     value: ordargument(base),
                     base: base,
                   };
-                }
+                },
               );
 
               // Text-mode accents
@@ -11514,7 +11514,7 @@
                     value: ordargument(base),
                     base: base,
                   };
-                }
+                },
               );
 
               // Horizontal stretchy braces
@@ -11531,7 +11531,7 @@
                     isOver: /^\\over/.test(context.funcName),
                     base: base,
                   };
-                }
+                },
               );
 
               // Stretchy accents under the body
@@ -11548,7 +11548,7 @@
                     value: ordargument(body),
                     body: body,
                   };
-                }
+                },
               );
 
               // Stretchy arrows with an optional argument
@@ -11588,7 +11588,7 @@
                     body: body,
                     below: below,
                   };
-                }
+                },
               );
 
               // enclose
@@ -11604,7 +11604,7 @@
                     label: context.funcName,
                     body: body,
                   };
-                }
+                },
               );
 
               // Infix generalized fractions
@@ -11634,7 +11634,7 @@
                     replaceWith: replaceWith,
                     token: context.token,
                   };
-                }
+                },
               );
 
               // Row breaks for aligned data
@@ -11651,7 +11651,7 @@
                     type: "cr",
                     size: size,
                   };
-                }
+                },
               );
 
               // Environment delimiters
@@ -11675,7 +11675,7 @@
                     name: name,
                     nameGroup: nameGroup,
                   };
-                }
+                },
               );
             },
             {
@@ -13311,7 +13311,7 @@
           ],
         },
         {},
-        [1]
+        [1],
       )(1);
     });
   });
@@ -13691,7 +13691,7 @@
       appendHtml(
         head,
         `
-    <meta property="article:author" content="${escapeHtml_1(a.firstName)} ${escapeHtml_1(a.lastName)}" />`
+    <meta property="article:author" content="${escapeHtml_1(a.firstName)} ${escapeHtml_1(a.lastName)}" />`,
       );
     });
 
@@ -14155,7 +14155,7 @@ d-citation-list .references .title {
       const entries = new Map(
         data.citations.map((citationKey) => {
           return [citationKey, data.bibliography.get(citationKey)];
-        })
+        }),
       );
       renderCitationList(citationListTag, entries, dom);
       citationListTag.setAttribute("distill-prerendered", "true");
