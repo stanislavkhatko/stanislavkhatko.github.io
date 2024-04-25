@@ -28,7 +28,6 @@ category: work
         {% include figure.liquid loading="eager" path="assets/img/kelman/light-cookie.png" title="listing" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-
 <div class="caption">
 Light theme
 </div>

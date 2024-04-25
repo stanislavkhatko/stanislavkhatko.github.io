@@ -3,7 +3,7 @@ layout: page
 title: Bookingagentinfo
 description: <a href='https://bookingagentinfo.com/news/'>bookingagentinfo.com/news</a>
 img: assets/img/bookingagentinfo/main-website.png
-importance: 1
+importance: 4
 category: work
 related_publications: false
 ---
