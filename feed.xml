@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://stanislavkhatko.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://stanislavkhatko.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2024-05-14T02:21:42+00:00</updated><id>https://stanislavkhatko.github.io/feed.xml</id><title type="html">blank</title><subtitle>My portfolio and blog website. </subtitle><entry><title type="html">PHP cheatsheet</title><link href="https://stanislavkhatko.github.io/blog/2024/php-cheatsheet/" rel="alternate" type="text/html" title="PHP cheatsheet"/><published>2024-05-13T20:32:00+00:00</published><updated>2024-05-13T20:32:00+00:00</updated><id>https://stanislavkhatko.github.io/blog/2024/php-cheatsheet</id><content type="html" xml:base="https://stanislavkhatko.github.io/blog/2024/php-cheatsheet/"><![CDATA[<p>List of useful PHP.</p> <p>Exit the file, string inside get’s echo’ed</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">die</span><span class="p">(</span><span class="s2">"This file is not ment to be ran. ¯\_(ツ)_/¯"</span><span class="p">);</span>
-<span class="k">exit</span><span class="p">(</span><span class="s2">"This file is not ment to be ran. ¯\_(ツ)_/¯"</span><span class="p">);</span>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://stanislavkhatko.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://stanislavkhatko.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2024-05-14T02:28:06+00:00</updated><id>https://stanislavkhatko.github.io/feed.xml</id><title type="html">blank</title><subtitle>My portfolio and blog website. </subtitle><entry><title type="html">PHP cheatsheet</title><link href="https://stanislavkhatko.github.io/blog/2024/php-cheatsheet/" rel="alternate" type="text/html" title="PHP cheatsheet"/><published>2024-05-13T20:32:00+00:00</published><updated>2024-05-13T20:32:00+00:00</updated><id>https://stanislavkhatko.github.io/blog/2024/php-cheatsheet</id><content type="html" xml:base="https://stanislavkhatko.github.io/blog/2024/php-cheatsheet/"><![CDATA[<p>List of useful PHP.</p> <p>Exit the file, string inside gets echoed</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">die</span><span class="p">(</span><span class="s2">"This file is not meant to be ran. ¯\_(ツ)_/¯"</span><span class="p">);</span>
+<span class="k">exit</span><span class="p">(</span><span class="s2">"This file is not meant to be ran. ¯\_(ツ)_/¯"</span><span class="p">);</span>
 </code></pre></div></div> <p>Printing</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">echo</span> <span class="s2">""</span><span class="p">;</span> <span class="c1">// Print a string or type that can be made into a string(I.E int, float).</span>
 <span class="nb">print_r</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span> <span class="c1">// Print anything, with type hints for array's and object's</span>
 <span class="nb">var_dump</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span> <span class="c1">// Print anything, with type hints for any value and sizes</span>
-</code></pre></div></div> <p>Usefull string manipulation methods</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$string</span> <span class="o">=</span> <span class="s1">'Awesome cheatsheets'</span><span class="p">;</span>
+</code></pre></div></div> <p>Useful string manipulation methods</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$string</span> <span class="o">=</span> <span class="s1">'Awesome cheatsheets'</span><span class="p">;</span>
 
 <span class="nf">str_contains</span><span class="p">(</span><span class="nv">$string</span><span class="p">,</span> <span class="s1">'cheat'</span><span class="p">);</span> <span class="c1">// Find if the string contains the specified string (PHP &gt;= 8.0)</span>
-<span class="nb">str_replace</span><span class="p">(</span><span class="s1">'Awesome'</span><span class="p">,</span> <span class="s1">'Bonjour'</span><span class="p">,</span> <span class="nv">$string</span><span class="p">);</span> <span class="c1">// Replace all occurence</span>
+<span class="nb">str_replace</span><span class="p">(</span><span class="s1">'Awesome'</span><span class="p">,</span> <span class="s1">'Bonjour'</span><span class="p">,</span> <span class="nv">$string</span><span class="p">);</span> <span class="c1">// Replace all occurrence</span>
 <span class="nb">strcmp</span><span class="p">(</span><span class="nv">$string</span><span class="p">,</span> <span class="s1">'Awesome cheatsheets'</span><span class="p">);</span> <span class="c1">// Compare two strings</span>
 <span class="nb">strpos</span><span class="p">(</span><span class="nv">$string</span><span class="p">,</span> <span class="s1">'a'</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span> <span class="c1">// Get position in the string</span>
 <span class="nb">str_split</span><span class="p">(</span><span class="nv">$string</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span> <span class="c1">// Split the string</span>
@@ -93,7 +93,7 @@
  <span class="c1">// Function with return type (void, int, float, string, array, object, mixed)</span>
  <span class="k">function</span> <span class="n">name</span><span class="p">(</span><span class="nv">$parameter</span><span class="p">)</span> <span class="p">:</span> <span class="kt">void</span><span class="p">;</span>
 
- <span class="c1">// Function with optionnal parameter</span>
+ <span class="c1">// Function with optional parameter</span>
  <span class="k">function</span> <span class="n">name</span><span class="p">(</span><span class="nv">$parameter</span> <span class="o">=</span> <span class="s1">''</span><span class="p">)</span> <span class="p">:</span> <span class="kt">string</span><span class="p">;</span>
 
  <span class="c1">// Function with typed parameter (? means "can be null")</span>
@@ -127,7 +127,7 @@
     <span class="k">private</span> <span class="nv">$property</span><span class="p">;</span>
 
     <span class="cd">/**
-     * Protected property, this instance and childs can access this property.
+     * Protected property, this instance and children can access this property.
      * @var Type
      */</span>
     <span class="k">protected</span> <span class="nv">$property</span><span class="p">;</span>
@@ -159,7 +159,7 @@
     <span class="p">}</span>
 
     <span class="cd">/**
-     * Protected function, this instance and childs can access this function.
+     * Protected function, this instance and children can access this function.
      * @param Type
      * @return Type
      */</span>
@@ -180,7 +180,7 @@
 
     <span class="cd">/**
      * Gets triggered on creating a new class instance
-     * http://php.net/manual/en/language.oop5.decon.php
+     * https://php.net/manual/en/language.oop5.decon.php
      * @param Type
      * @return void
      */</span>
@@ -190,7 +190,7 @@
 
     <span class="cd">/**
      * Gets triggered on destruction of a class instance
-     * http://php.net/manual/en/language.oop5.decon.php
+     * https://php.net/manual/en/language.oop5.decon.php
      * @return void
      */</span>
     <span class="k">public</span> <span class="k">function</span> <span class="n">__destruct</span><span class="p">()</span>
@@ -199,7 +199,7 @@
 
     <span class="cd">/**
      * __set() is run when writing data to inaccessible properties.
-     * http://php.net/manual/en/language.oop5.overloading.php
+     * https://php.net/manual/en/language.oop5.overloading.php
      * @param string name
      * @param mixed value
      * @return void
@@ -210,7 +210,7 @@
 
     <span class="cd">/**
      * __get() is utilized for reading data from inaccessible properties.
-     * http://php.net/manual/en/language.oop5.overloading.php
+     * https://php.net/manual/en/language.oop5.overloading.php
      * @param string name
      * @return mixed
      */</span>
@@ -220,7 +220,7 @@
 
     <span class="cd">/**
      * __isset() is triggered by calling isset() or empty() on inaccessible properties.
-     * http://php.net/manual/en/language.oop5.overloading.php
+     * https://php.net/manual/en/language.oop5.overloading.php
      * @param string name
      * @return bool
      */</span>
@@ -230,7 +230,7 @@
 
     <span class="cd">/**
      * __unset() is invoked when unset() is used on inaccessible properties.
-     * http://php.net/manual/en/language.oop5.overloading.php
+     * https://php.net/manual/en/language.oop5.overloading.php
      * @param string name
      * @return void
      */</span>
@@ -240,7 +240,7 @@
 
     <span class="cd">/**
      * __call is triggered when invoking inaccessible methods in an object context.
-     * http://php.net/manual/en/language.oop5.overloading.php
+     * https://php.net/manual/en/language.oop5.overloading.php
      * @param string name
      * @param array arguments
      * @return mixed
@@ -251,7 +251,7 @@
 
     <span class="cd">/**
      * __callStatic() is triggered when invoking inaccessible methods in a static context.
-     * http://php.net/manual/en/language.oop5.overloading.php
+     * https://php.net/manual/en/language.oop5.overloading.php
      * @param string name
      * @param array arguments
      * @return mixed
@@ -261,7 +261,7 @@
     <span class="p">}</span>
 
     <span class="cd">/**
-     * http://php.net/manual/en/language.oop5.magic.php
+     * https://php.net/manual/en/language.oop5.magic.php
      * @return array
      */</span>
     <span class="k">public</span> <span class="k">function</span> <span class="n">__sleep</span><span class="p">()</span>
@@ -269,7 +269,7 @@
     <span class="p">}</span>
 
     <span class="cd">/**
-     * http://php.net/manual/en/language.oop5.magic.php
+     * https://php.net/manual/en/language.oop5.magic.php
      * @return void
      */</span>
     <span class="k">public</span> <span class="k">function</span> <span class="n">__wakeup</span><span class="p">()</span>
@@ -277,7 +277,7 @@
     <span class="p">}</span>
 
     <span class="cd">/**
-     * http://php.net/manual/en/language.oop5.magic.php
+     * https://php.net/manual/en/language.oop5.magic.php
      * @return string
      */</span>
     <span class="k">public</span> <span class="k">function</span> <span class="n">__toString</span><span class="p">()</span>
@@ -285,7 +285,7 @@
     <span class="p">}</span>
 
     <span class="cd">/**
-     * http://php.net/manual/en/language.oop5.magic.php
+     * https://php.net/manual/en/language.oop5.magic.php
      * @param Type
      * @return mixed
      */</span>
@@ -294,7 +294,7 @@
     <span class="p">}</span>
 
     <span class="cd">/**
-     * http://php.net/manual/en/language.oop5.magic.php
+     * https://php.net/manual/en/language.oop5.magic.php
      * @param array properties
      * @return object
      */</span>
@@ -303,7 +303,7 @@
     <span class="p">}</span>
 
     <span class="cd">/**
-     * http://php.net/manual/en/language.oop5.magic.php
+     * https://php.net/manual/en/language.oop5.magic.php
      * @return array
      */</span>
     <span class="k">public</span> <span class="k">function</span> <span class="n">__debugInfo</span><span class="p">()</span>
