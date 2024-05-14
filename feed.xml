@@ -1,4 +1,358 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://stanislavkhatko.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://stanislavkhatko.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2024-05-14T01:50:42+00:00</updated><id>https://stanislavkhatko.github.io/feed.xml</id><title type="html">blank</title><subtitle>My portfolio and blog website. </subtitle><entry><title type="html">JavaScript cheatsheet</title><link href="https://stanislavkhatko.github.io/blog/2024/javascript-cheatsheet/" rel="alternate" type="text/html" title="JavaScript cheatsheet"/><published>2024-04-27T23:37:00+00:00</published><updated>2024-04-27T23:37:00+00:00</updated><id>https://stanislavkhatko.github.io/blog/2024/javascript-cheatsheet</id><content type="html" xml:base="https://stanislavkhatko.github.io/blog/2024/javascript-cheatsheet/"><![CDATA[<p>List of useful javaScript.</p> <h4 id="global-objects--object">GLOBAL OBJECTS &gt; OBJECT</h4> <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Mozilla</a></p> <p>Global object: properties</p> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">Object</span><span class="p">.</span><span class="nx">length</span>                                        <span class="c1">// length is a property of a function object, and indicates how many arguments the function expects, i.e. the number of formal parameters. This number does not include the rest parameter. Has a value of 1.</span>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://stanislavkhatko.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://stanislavkhatko.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2024-05-14T02:21:42+00:00</updated><id>https://stanislavkhatko.github.io/feed.xml</id><title type="html">blank</title><subtitle>My portfolio and blog website. </subtitle><entry><title type="html">PHP cheatsheet</title><link href="https://stanislavkhatko.github.io/blog/2024/php-cheatsheet/" rel="alternate" type="text/html" title="PHP cheatsheet"/><published>2024-05-13T20:32:00+00:00</published><updated>2024-05-13T20:32:00+00:00</updated><id>https://stanislavkhatko.github.io/blog/2024/php-cheatsheet</id><content type="html" xml:base="https://stanislavkhatko.github.io/blog/2024/php-cheatsheet/"><![CDATA[<p>List of useful PHP.</p> <p>Exit the file, string inside get’s echo’ed</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">die</span><span class="p">(</span><span class="s2">"This file is not ment to be ran. ¯\_(ツ)_/¯"</span><span class="p">);</span>
+<span class="k">exit</span><span class="p">(</span><span class="s2">"This file is not ment to be ran. ¯\_(ツ)_/¯"</span><span class="p">);</span>
+</code></pre></div></div> <p>Printing</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">echo</span> <span class="s2">""</span><span class="p">;</span> <span class="c1">// Print a string or type that can be made into a string(I.E int, float).</span>
+<span class="nb">print_r</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span> <span class="c1">// Print anything, with type hints for array's and object's</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span> <span class="c1">// Print anything, with type hints for any value and sizes</span>
+</code></pre></div></div> <p>Usefull string manipulation methods</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$string</span> <span class="o">=</span> <span class="s1">'Awesome cheatsheets'</span><span class="p">;</span>
+
+<span class="nf">str_contains</span><span class="p">(</span><span class="nv">$string</span><span class="p">,</span> <span class="s1">'cheat'</span><span class="p">);</span> <span class="c1">// Find if the string contains the specified string (PHP &gt;= 8.0)</span>
+<span class="nb">str_replace</span><span class="p">(</span><span class="s1">'Awesome'</span><span class="p">,</span> <span class="s1">'Bonjour'</span><span class="p">,</span> <span class="nv">$string</span><span class="p">);</span> <span class="c1">// Replace all occurence</span>
+<span class="nb">strcmp</span><span class="p">(</span><span class="nv">$string</span><span class="p">,</span> <span class="s1">'Awesome cheatsheets'</span><span class="p">);</span> <span class="c1">// Compare two strings</span>
+<span class="nb">strpos</span><span class="p">(</span><span class="nv">$string</span><span class="p">,</span> <span class="s1">'a'</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span> <span class="c1">// Get position in the string</span>
+<span class="nb">str_split</span><span class="p">(</span><span class="nv">$string</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span> <span class="c1">// Split the string</span>
+<span class="nb">strrev</span><span class="p">(</span><span class="nv">$string</span><span class="p">);</span> <span class="c1">// Reverse a string</span>
+<span class="nb">trim</span><span class="p">(</span><span class="nv">$string</span><span class="p">);</span> <span class="c1">// Strip whitespace from the beginning and end of a string</span>
+<span class="nb">ucfirst</span><span class="p">(</span><span class="nv">$string</span><span class="p">);</span> <span class="c1">// Make a string's first character uppercase</span>
+<span class="nb">lcfirst</span><span class="p">(</span><span class="nv">$string</span><span class="p">);</span> <span class="c1">// Make a string's first character lowercase</span>
+<span class="nb">substr</span><span class="p">(</span><span class="nv">$string</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span> <span class="c1">// Return part of a string</span>
+</code></pre></div></div> <h3 id="declaring-an-array">Declaring an Array</h3> <p>Indexed Array</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$arr</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s2">"John"</span><span class="p">,</span> <span class="s2">"Doe"</span><span class="p">,</span> <span class="s2">"Lorem"</span><span class="p">,</span> <span class="s2">"Ipsum"</span><span class="p">);</span>
+</code></pre></div></div> <p>Associative Array</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$arr</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s2">"John"</span><span class="o">=&gt;</span><span class="s2">"10"</span><span class="p">,</span> <span class="s2">"Doe"</span><span class="o">=&gt;</span><span class="s2">"200"</span><span class="p">,</span> <span class="s2">"Doe"</span><span class="o">=&gt;</span><span class="s2">"3000"</span><span class="p">,</span> <span class="s2">"Ipsum"</span><span class="o">=&gt;</span><span class="s2">"40000"</span><span class="p">);</span>
+</code></pre></div></div> <p>Multidimensional Arrays</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$arr</span> <span class="o">=</span> <span class="k">array</span> <span class="p">(</span>
+    <span class="k">array</span><span class="p">(</span><span class="s2">"John"</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">180</span><span class="p">),</span>
+    <span class="k">array</span><span class="p">(</span><span class="s2">"Doe"</span><span class="p">,</span><span class="mi">150</span><span class="p">,</span><span class="mi">130</span><span class="p">),</span>
+    <span class="k">array</span><span class="p">(</span><span class="s2">"Lorem"</span><span class="p">,</span><span class="mi">500</span><span class="p">,</span><span class="mi">200</span><span class="p">),</span>
+    <span class="k">array</span><span class="p">(</span><span class="s2">"Ipsum"</span><span class="p">,</span><span class="mi">170</span><span class="p">,</span><span class="mi">150</span><span class="p">)</span>
+<span class="p">);</span>
+</code></pre></div></div> <p>Declaring array with short syntax</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"John"</span><span class="p">,</span> <span class="s2">"Doe"</span><span class="p">,</span> <span class="s2">"Lorem"</span><span class="p">,</span> <span class="s2">"Ipsum"</span><span class="p">];</span> <span class="c1">// Indexed Array</span>
+<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"John"</span><span class="o">=&gt;</span><span class="s2">"10"</span><span class="p">,</span> <span class="s2">"Doe"</span><span class="o">=&gt;</span><span class="s2">"200"</span><span class="p">,</span> <span class="s2">"Doe"</span><span class="o">=&gt;</span><span class="s2">"3000"</span><span class="p">,</span> <span class="s2">"Ipsum"</span><span class="o">=&gt;</span><span class="s2">"40000"</span><span class="p">];</span> <span class="c1">// Associative Array</span>
+<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="s2">"John"</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">180</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">"Doe"</span><span class="p">,</span><span class="mi">150</span><span class="p">,</span><span class="mi">130</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">"Lorem"</span><span class="p">,</span><span class="mi">500</span><span class="p">,</span><span class="mi">200</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">"Ipsum"</span><span class="p">,</span><span class="mi">170</span><span class="p">,</span><span class="mi">150</span><span class="p">],</span> <span class="c1">// You can have a "," at the end without throwing syntax errors</span>
+<span class="p">];</span>
+</code></pre></div></div> <p>Sorting an Array</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sort</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span> <span class="c1">// Sort arrays in ascending order.</span>
+<span class="nb">rsort</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span> <span class="c1">// Sort arrays in descending order.</span>
+<span class="nb">asort</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span> <span class="c1">// Sort associative arrays in ascending order, according to the value.</span>
+<span class="nb">ksort</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span> <span class="c1">// Sort associative arrays in ascending order, according to the key.</span>
+<span class="nb">arsort</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span> <span class="c1">// Sort associative arrays in descending order, according to the value.</span>
+<span class="nb">krsort</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span> <span class="c1">// Sort associative arrays in descending order, according to the key.</span>
+</code></pre></div></div> <h3 id="conditions">Conditions</h3> <p>If/Elseif/Else</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="nv">$i</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="p">}</span> <span class="k">elseif</span><span class="p">(</span> <span class="nv">$i</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+
+<span class="p">}</span>
+</code></pre></div></div> <p>Ternary</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$string</span> <span class="o">=</span> <span class="nv">$state</span> <span class="o">==</span> <span class="s1">'Running'</span> <span class="o">?</span> <span class="s1">'He is running'</span> <span class="o">:</span> <span class="s1">'I don\'t know'</span><span class="p">;</span>
+</code></pre></div></div> <p>Null coalescing</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$string</span> <span class="o">=</span> <span class="nv">$startDate</span> <span class="o">??</span> <span class="s1">''</span><span class="p">;</span>
+</code></pre></div></div> <p>Ways of looping</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">continue</span><span class="p">;</span> <span class="c1">// Skip current iter</span>
+<span class="k">break</span><span class="p">;</span> <span class="c1">// Exit loop</span>
+</code></pre></div></div> <p>Foreach</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">foreach</span><span class="p">(</span><span class="nv">$arr</span> <span class="k">as</span> <span class="nv">$key</span> <span class="o">=&gt;</span> <span class="nv">$value</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$key</span> <span class="o">=</span> <span class="nv">$key</span><span class="p">;</span>
+    <span class="nv">$value</span> <span class="o">=</span> <span class="nv">$value</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div> <p>For</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span><span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$key</span> <span class="o">=</span> <span class="nv">$i</span><span class="p">;</span>
+    <span class="nv">$value</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$i</span><span class="p">];</span>
+<span class="p">}</span>
+</code></pre></div></div> <p>While</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">while</span><span class="p">(</span><span class="nv">$i</span> <span class="o">&lt;</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$key</span> <span class="o">=</span> <span class="nv">$i</span><span class="p">;</span>
+    <span class="nv">$value</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$i</span><span class="p">];</span>
+<span class="p">}</span>
+</code></pre></div></div> <p>Do while</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">do</span> <span class="p">{</span>
+    <span class="nv">$key</span> <span class="o">=</span> <span class="nv">$i</span><span class="p">;</span>
+    <span class="nv">$value</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">[</span><span class="nv">$i</span><span class="p">];</span>
+<span class="p">}</span> <span class="k">while</span><span class="p">(</span><span class="nv">$i</span> <span class="o">&lt;</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$arr</span><span class="p">));</span>
+</code></pre></div></div> <p>Switch</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">switch</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="mi">1</span><span class="o">:</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mi">2</span><span class="o">:</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mi">3</span><span class="o">:</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">default</span><span class="o">:</span>
+<span class="p">}</span>
+</code></pre></div></div> <h3 id="global-variables">Global variables</h3> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$_SERVER</span><span class="p">;</span> <span class="c1">// SERVER variables</span>
+<span class="nv">$_GET</span><span class="p">;</span> <span class="c1">// Query params</span>
+<span class="nv">$_POST</span><span class="p">;</span> <span class="c1">// Post fields</span>
+<span class="nv">$_REQUEST</span><span class="p">;</span> <span class="c1">// GET and POST together</span>
+<span class="nv">$GLOBALS</span><span class="p">;</span> <span class="c1">// Array of global variables</span>
+<span class="nv">$_SESSION</span><span class="p">;</span> <span class="c1">// Browser session</span>
+<span class="nv">$_FILES</span><span class="p">;</span> <span class="c1">// Array of files that are sent in request</span>
+<span class="nv">$_COOKIE</span><span class="p">;</span> <span class="c1">// Array of cookies sent in request</span>
+<span class="nv">$_ENV</span><span class="p">;</span> <span class="c1">// php.ini options</span>
+<span class="nv">$argv</span><span class="p">;</span> <span class="c1">// Array of terminal arguments (filename included)</span>
+<span class="nv">$argc</span><span class="p">;</span> <span class="c1">// Number of arguments passed into terminal</span>
+</code></pre></div></div> <h3 id="functions">Functions</h3> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+ <span class="c1">// Simple function</span>
+ <span class="k">function</span> <span class="n">name</span><span class="p">(</span><span class="nv">$parameter</span><span class="p">);</span>
+
+ <span class="c1">// Function with return type (void, int, float, string, array, object, mixed)</span>
+ <span class="k">function</span> <span class="n">name</span><span class="p">(</span><span class="nv">$parameter</span><span class="p">)</span> <span class="p">:</span> <span class="kt">void</span><span class="p">;</span>
+
+ <span class="c1">// Function with optionnal parameter</span>
+ <span class="k">function</span> <span class="n">name</span><span class="p">(</span><span class="nv">$parameter</span> <span class="o">=</span> <span class="s1">''</span><span class="p">)</span> <span class="p">:</span> <span class="kt">string</span><span class="p">;</span>
+
+ <span class="c1">// Function with typed parameter (? means "can be null")</span>
+ <span class="k">function</span> <span class="n">name</span><span class="p">(</span><span class="kt">?string</span> <span class="nv">$parameter</span><span class="p">)</span> <span class="p">:</span> <span class="kt">?string</span><span class="p">;</span>
+
+ <span class="c1">// Function with union types (PHP &gt;= 8.0)</span>
+ <span class="k">function</span> <span class="n">name</span><span class="p">(</span><span class="kt">int</span><span class="o">|</span><span class="n">string</span> <span class="nv">$parameter1</span><span class="p">,</span> <span class="kt">array</span> <span class="nv">$parameter2</span><span class="p">)</span> <span class="p">:</span> <span class="kt">int</span><span class="o">|</span><span class="n">string</span><span class="p">;</span>
+
+ <span class="c1">// Function call</span>
+ <span class="nf">name</span><span class="p">(</span><span class="s1">'my_parameter'</span><span class="p">);</span>
+
+ <span class="c1">// Null safe operator (PHP &gt;= 8.0)</span>
+ <span class="nv">$myObject</span><span class="o">?-&gt;</span><span class="nf">getName</span><span class="p">()</span><span class="o">?-&gt;</span><span class="nf">startWith</span><span class="p">(</span><span class="s1">'A'</span><span class="p">);</span>
+</code></pre></div></div> <h3 id="class">Class</h3> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">NormalClass</span> <span class="kd">extends</span> <span class="nc">AbstractClassName</span> <span class="kd">implements</span> <span class="nc">InterfaceName</span>
+<span class="p">{</span>
+
+    <span class="kn">use</span> <span class="nc">TraitName</span><span class="p">;</span>
+
+    <span class="c1">// --&gt; PROPERTY TYPES &lt;--</span>
+
+    <span class="cd">/**
+     * Public property, everyone can access this property. 
+     * @var Type
+     */</span>
+    <span class="k">public</span> <span class="nv">$property</span><span class="p">;</span>
+
+    <span class="cd">/**
+     * Private property, only this instance can access this property.
+     * @var Type
+     */</span>
+    <span class="k">private</span> <span class="nv">$property</span><span class="p">;</span>
+
+    <span class="cd">/**
+     * Protected property, this instance and childs can access this property.
+     * @var Type
+     */</span>
+    <span class="k">protected</span> <span class="nv">$property</span><span class="p">;</span>
+
+    <span class="cd">/**
+     * Static property, is the same for all instances of this class.
+     * @var Type
+     */</span>
+    <span class="k">static</span> <span class="nv">$property</span><span class="p">;</span>
+
+    <span class="c1">// --&gt; FUNCTION TYPES &lt;--</span>
+
+    <span class="cd">/**
+     * Public function, everyone can access this function.
+     * @param Type
+     * @return Type
+     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">publicFunction</span><span class="p">(</span><span class="kt">Type</span> <span class="nv">$var</span> <span class="o">=</span> <span class="kc">null</span><span class="p">):</span> <span class="kt">Type</span>
+    <span class="p">{</span>
+    <span class="p">}</span>
+
+    <span class="cd">/**
+     * Private function, only this instance can access this function.
+     * @param Type
+     * @return Type
+     */</span>
+    <span class="k">private</span> <span class="k">function</span> <span class="n">privateFunction</span><span class="p">(</span><span class="kt">Type</span> <span class="nv">$var</span> <span class="o">=</span> <span class="kc">null</span><span class="p">):</span> <span class="kt">Type</span>
+    <span class="p">{</span>
+    <span class="p">}</span>
+
+    <span class="cd">/**
+     * Protected function, this instance and childs can access this function.
+     * @param Type
+     * @return Type
+     */</span>
+    <span class="k">protected</span> <span class="k">function</span> <span class="n">protectedFunction</span><span class="p">(</span><span class="kt">Type</span> <span class="nv">$var</span> <span class="o">=</span> <span class="kc">null</span><span class="p">):</span> <span class="kt">Type</span>
+    <span class="p">{</span>
+    <span class="p">}</span>
+    
+    <span class="cd">/**
+     * Static function, doesn't need an instance to be executed.
+     * @param Type
+     * @return Type
+     */</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="n">staticFunction</span><span class="p">(</span><span class="kt">Type</span> <span class="nv">$var</span> <span class="o">=</span> <span class="kc">null</span><span class="p">):</span> <span class="kt">Type</span>
+    <span class="p">{</span>
+    <span class="p">}</span>
+
+    <span class="c1">// --&gt; MAGIC METHODS &lt;--</span>
+
+    <span class="cd">/**
+     * Gets triggered on creating a new class instance
+     * http://php.net/manual/en/language.oop5.decon.php
+     * @param Type
+     * @return void
+     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__construct</span><span class="p">(</span><span class="kt">Type</span> <span class="nv">$var</span> <span class="o">=</span> <span class="kc">null</span><span class="p">)</span>
+    <span class="p">{</span>
+    <span class="p">}</span>
+
+    <span class="cd">/**
+     * Gets triggered on destruction of a class instance
+     * http://php.net/manual/en/language.oop5.decon.php
+     * @return void
+     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__destruct</span><span class="p">()</span>
+    <span class="p">{</span>
+    <span class="p">}</span>
+
+    <span class="cd">/**
+     * __set() is run when writing data to inaccessible properties.
+     * http://php.net/manual/en/language.oop5.overloading.php
+     * @param string name
+     * @param mixed value
+     * @return void
+     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__set</span><span class="p">(</span><span class="kt">string</span> <span class="nv">$name</span> <span class="p">,</span> <span class="kt">mixed</span> <span class="nv">$value</span><span class="p">)</span>
+    <span class="p">{</span>
+    <span class="p">}</span>
+
+    <span class="cd">/**
+     * __get() is utilized for reading data from inaccessible properties.
+     * http://php.net/manual/en/language.oop5.overloading.php
+     * @param string name
+     * @return mixed
+     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__get</span><span class="p">(</span><span class="kt">string</span> <span class="nv">$name</span><span class="p">)</span>
+    <span class="p">{</span>
+    <span class="p">}</span>
+
+    <span class="cd">/**
+     * __isset() is triggered by calling isset() or empty() on inaccessible properties.
+     * http://php.net/manual/en/language.oop5.overloading.php
+     * @param string name
+     * @return bool
+     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__isset</span><span class="p">(</span><span class="kt">string</span> <span class="nv">$name</span><span class="p">)</span>
+    <span class="p">{</span>
+    <span class="p">}</span>
+
+    <span class="cd">/**
+     * __unset() is invoked when unset() is used on inaccessible properties.
+     * http://php.net/manual/en/language.oop5.overloading.php
+     * @param string name
+     * @return void
+     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__unset</span><span class="p">(</span><span class="kt">string</span> <span class="nv">$name</span><span class="p">)</span>
+    <span class="p">{</span>
+    <span class="p">}</span>
+
+    <span class="cd">/**
+     * __call is triggered when invoking inaccessible methods in an object context.
+     * http://php.net/manual/en/language.oop5.overloading.php
+     * @param string name
+     * @param array arguments
+     * @return mixed
+     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__call</span><span class="p">(</span><span class="kt">string</span> <span class="nv">$name</span><span class="p">,</span> <span class="kt">array</span> <span class="nv">$arguments</span><span class="p">)</span>
+    <span class="p">{</span>
+    <span class="p">}</span>
+
+    <span class="cd">/**
+     * __callStatic() is triggered when invoking inaccessible methods in a static context.
+     * http://php.net/manual/en/language.oop5.overloading.php
+     * @param string name
+     * @param array arguments
+     * @return mixed
+     */</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="n">__callStatic</span><span class="p">(</span><span class="kt">string</span> <span class="nv">$name</span><span class="p">,</span> <span class="kt">array</span> <span class="nv">$arguments</span><span class="p">)</span>
+    <span class="p">{</span>
+    <span class="p">}</span>
+
+    <span class="cd">/**
+     * http://php.net/manual/en/language.oop5.magic.php
+     * @return array
+     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__sleep</span><span class="p">()</span>
+    <span class="p">{</span>
+    <span class="p">}</span>
+
+    <span class="cd">/**
+     * http://php.net/manual/en/language.oop5.magic.php
+     * @return void
+     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__wakeup</span><span class="p">()</span>
+    <span class="p">{</span>
+    <span class="p">}</span>
+
+    <span class="cd">/**
+     * http://php.net/manual/en/language.oop5.magic.php
+     * @return string
+     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__toString</span><span class="p">()</span>
+    <span class="p">{</span>
+    <span class="p">}</span>
+
+    <span class="cd">/**
+     * http://php.net/manual/en/language.oop5.magic.php
+     * @param Type
+     * @return mixed
+     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__invoke</span><span class="p">(</span><span class="kt">Type</span> <span class="nv">$var</span> <span class="o">=</span> <span class="kc">null</span><span class="p">)</span>
+    <span class="p">{</span>
+    <span class="p">}</span>
+
+    <span class="cd">/**
+     * http://php.net/manual/en/language.oop5.magic.php
+     * @param array properties
+     * @return object
+     */</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="n">__set_state</span><span class="p">(</span><span class="kt">array</span> <span class="nv">$properties</span><span class="p">)</span>
+    <span class="p">{</span>
+    <span class="p">}</span>
+
+    <span class="cd">/**
+     * http://php.net/manual/en/language.oop5.magic.php
+     * @return array
+     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__debugInfo</span><span class="p">()</span>
+    <span class="p">{</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div></div> <p>Every class that has implemented this interface need to have the same functions.</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">InterfaceName</span>
+<span class="p">{</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="n">FunctionName</span><span class="p">(</span><span class="kt">Type</span> <span class="nv">$var</span> <span class="o">=</span> <span class="kc">null</span><span class="p">):</span> <span class="kt">Type</span><span class="p">;</span>
+
+<span class="p">}</span>
+</code></pre></div></div> <p>Combination of class and interface.</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">abstract</span> <span class="kd">class</span> <span class="nc">AbstractClassName</span>
+<span class="p">{</span>
+
+    <span class="cd">/**
+     * Classes extending this abstract class need to have this function.
+     * @param Type
+     * @return Type
+     */</span>
+    <span class="k">abstract</span> <span class="k">function</span> <span class="n">abstractFunction</span><span class="p">(</span><span class="kt">Type</span> <span class="nv">$var</span> <span class="o">=</span> <span class="kc">null</span><span class="p">):</span> <span class="kt">Type</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div> <p>Basic Implementation of LoggerAwareInterface.</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">trait</span> <span class="nc">LoggerAwareTrait</span>
+<span class="p">{</span>
+    <span class="cd">/**
+     * The logger instance.
+     *
+     * @var LoggerInterface
+     */</span>
+    <span class="k">protected</span> <span class="nv">$logger</span><span class="p">;</span>
+    <span class="cd">/**
+     * Sets a logger.
+     *
+     * @param LoggerInterface $logger
+     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">setLogger</span><span class="p">(</span><span class="kt">LoggerInterface</span> <span class="nv">$logger</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">logger</span> <span class="o">=</span> <span class="nv">$logger</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div> <p>Example with use of LoggerAwareTrait.</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">ClassWithLogger</span>
+<span class="p">{</span>
+    <span class="cd">/**
+     * Use the LoggerAwareTrait in this class.
+     */</span>
+    <span class="kn">use</span> <span class="nc">LoggerAwareTrait</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div> <p>Originated from <a href="https://github.com/LeCoupa/awesome-cheatsheets">github</a></p>]]></content><author><name></name></author><category term="code"/><category term="php"/><category term="code"/><summary type="html"><![CDATA[Most used and useful PHP functions and methods.]]></summary></entry><entry><title type="html">JavaScript cheatsheet</title><link href="https://stanislavkhatko.github.io/blog/2024/javascript-cheatsheet/" rel="alternate" type="text/html" title="JavaScript cheatsheet"/><published>2024-04-27T23:37:00+00:00</published><updated>2024-04-27T23:37:00+00:00</updated><id>https://stanislavkhatko.github.io/blog/2024/javascript-cheatsheet</id><content type="html" xml:base="https://stanislavkhatko.github.io/blog/2024/javascript-cheatsheet/"><![CDATA[<p>List of useful javaScript.</p> <h4 id="global-objects--object">GLOBAL OBJECTS &gt; OBJECT</h4> <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Mozilla</a></p> <p>Global object: properties</p> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">Object</span><span class="p">.</span><span class="nx">length</span>                                        <span class="c1">// length is a property of a function object, and indicates how many arguments the function expects, i.e. the number of formal parameters. This number does not include the rest parameter. Has a value of 1.</span>
 <span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span>                                     <span class="c1">// Represents the Object prototype object and allows to add new properties and methods to all objects of type Object.</span>
 </code></pre></div></div> <p>Methods of the Object constructor</p> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">Object</span><span class="p">.</span><span class="nf">assign</span><span class="p">(</span><span class="nx">target</span><span class="p">,</span> <span class="p">...</span><span class="nx">sources</span><span class="p">)</span>                    <span class="c1">// Copies the values of all enumerable own properties from one or more source objects to a target object. method is used to copy the values of all enumerable own properties from one or more source objects to a target object. It will return the target object</span>
 <span class="nb">Object</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="nx">MyObject</span><span class="p">)</span>                              <span class="c1">// Creates a new object with the specified prototype object and properties. The object which should be the prototype of the newly-created object.</span>
@@ -927,4 +1281,4 @@ index 3bb754ac..a34839c0 100644
     \draw[green,fill=black!60!green] (0,0) circle [x radius=1.5cm, y radius=10mm];
     \draw[blue,fill=black!60!blue] (0,0) circle [x radius=1cm, y radius=5mm, rotate=30];
 \end{tikzpicture}
-</script>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="diagrams"/><summary type="html"><![CDATA[this is what included TikZ code could look like]]></summary></entry><entry><title type="html">a post with bibliography</title><link href="https://stanislavkhatko.github.io/blog/2023/post-bibliography/" rel="alternate" type="text/html" title="a post with bibliography"/><published>2023-07-12T13:56:00+00:00</published><updated>2023-07-12T13:56:00+00:00</updated><id>https://stanislavkhatko.github.io/blog/2023/post-bibliography</id><content type="html" xml:base="https://stanislavkhatko.github.io/blog/2023/post-bibliography/"><![CDATA[<p>This post shows how to add bibliography to simple blog posts. We support every citation style that <a href="https://github.com/inukshuk/jekyll-scholar">jekyll-scholar</a> does. That means simple citation like <a class="citation" href="#einstein1950meaning">(Einstein &amp; Taub, 1950)</a>, multiple citations like <a class="citation" href="#einstein1950meaning">(Einstein &amp; Taub, 1950; Einstein, 1905)</a>, long references like <span id="einstein1905movement">Einstein, A. (1905). Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat. <i>Ann. Phys.</i>, <i>17</i>, 549–560.</span> or also quotes:</p> <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br/>sed do eiusmod tempor.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p><cite><a class="citation" href="#einstein1905electrodynamics">(Einstein, 1905)</a></cite></blockquote> <p>If you would like something more academic, check the <a href="/blog/2021/distill/">distill style post</a>.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="bib"/><summary type="html"><![CDATA[an example of a blog post with bibliography]]></summary></entry></feed>
+</script>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="diagrams"/><summary type="html"><![CDATA[this is what included TikZ code could look like]]></summary></entry></feed>
