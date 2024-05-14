@@ -10,10 +10,10 @@ featured: true
 
 List of useful PHP.
 
-Exit the file, string inside get's echo'ed
+Exit the file, string inside gets echoed
 ```php
-die("This file is not ment to be ran. ¯\_(ツ)_/¯");
-exit("This file is not ment to be ran. ¯\_(ツ)_/¯");
+die("This file is not meant to be ran. ¯\_(ツ)_/¯");
+exit("This file is not meant to be ran. ¯\_(ツ)_/¯");
 ```
 
 
@@ -24,12 +24,12 @@ print_r($arr); // Print anything, with type hints for array's and object's
 var_dump($arr); // Print anything, with type hints for any value and sizes
 ```
 
-Usefull string manipulation methods
+Useful string manipulation methods
 ```php
 $string = 'Awesome cheatsheets';
 
 str_contains($string, 'cheat'); // Find if the string contains the specified string (PHP >= 8.0)
-str_replace('Awesome', 'Bonjour', $string); // Replace all occurence
+str_replace('Awesome', 'Bonjour', $string); // Replace all occurrence
 strcmp($string, 'Awesome cheatsheets'); // Compare two strings
 strpos($string, 'a', 0); // Get position in the string
 str_split($string, 2); // Split the string
@@ -184,7 +184,7 @@ $argc; // Number of arguments passed into terminal
  // Function with return type (void, int, float, string, array, object, mixed)
  function name($parameter) : void;
 
- // Function with optionnal parameter
+ // Function with optional parameter
  function name($parameter = '') : string;
 
  // Function with typed parameter (? means "can be null")
@@ -222,7 +222,7 @@ class NormalClass extends AbstractClassName implements InterfaceName
     private $property;
 
     /**
-     * Protected property, this instance and childs can access this property.
+     * Protected property, this instance and children can access this property.
      * @var Type
      */
     protected $property;
@@ -254,7 +254,7 @@ class NormalClass extends AbstractClassName implements InterfaceName
     }
 
     /**
-     * Protected function, this instance and childs can access this function.
+     * Protected function, this instance and children can access this function.
      * @param Type
      * @return Type
      */
@@ -275,7 +275,7 @@ class NormalClass extends AbstractClassName implements InterfaceName
 
     /**
      * Gets triggered on creating a new class instance
-     * http://php.net/manual/en/language.oop5.decon.php
+     * https://php.net/manual/en/language.oop5.decon.php
      * @param Type
      * @return void
      */
@@ -285,7 +285,7 @@ class NormalClass extends AbstractClassName implements InterfaceName
 
     /**
      * Gets triggered on destruction of a class instance
-     * http://php.net/manual/en/language.oop5.decon.php
+     * https://php.net/manual/en/language.oop5.decon.php
      * @return void
      */
     public function __destruct()
@@ -294,7 +294,7 @@ class NormalClass extends AbstractClassName implements InterfaceName
 
     /**
      * __set() is run when writing data to inaccessible properties.
-     * http://php.net/manual/en/language.oop5.overloading.php
+     * https://php.net/manual/en/language.oop5.overloading.php
      * @param string name
      * @param mixed value
      * @return void
@@ -305,7 +305,7 @@ class NormalClass extends AbstractClassName implements InterfaceName
 
     /**
      * __get() is utilized for reading data from inaccessible properties.
-     * http://php.net/manual/en/language.oop5.overloading.php
+     * https://php.net/manual/en/language.oop5.overloading.php
      * @param string name
      * @return mixed
      */
@@ -315,7 +315,7 @@ class NormalClass extends AbstractClassName implements InterfaceName
 
     /**
      * __isset() is triggered by calling isset() or empty() on inaccessible properties.
-     * http://php.net/manual/en/language.oop5.overloading.php
+     * https://php.net/manual/en/language.oop5.overloading.php
      * @param string name
      * @return bool
      */
@@ -325,7 +325,7 @@ class NormalClass extends AbstractClassName implements InterfaceName
 
     /**
      * __unset() is invoked when unset() is used on inaccessible properties.
-     * http://php.net/manual/en/language.oop5.overloading.php
+     * https://php.net/manual/en/language.oop5.overloading.php
      * @param string name
      * @return void
      */
@@ -335,7 +335,7 @@ class NormalClass extends AbstractClassName implements InterfaceName
 
     /**
      * __call is triggered when invoking inaccessible methods in an object context.
-     * http://php.net/manual/en/language.oop5.overloading.php
+     * https://php.net/manual/en/language.oop5.overloading.php
      * @param string name
      * @param array arguments
      * @return mixed
@@ -346,7 +346,7 @@ class NormalClass extends AbstractClassName implements InterfaceName
 
     /**
      * __callStatic() is triggered when invoking inaccessible methods in a static context.
-     * http://php.net/manual/en/language.oop5.overloading.php
+     * https://php.net/manual/en/language.oop5.overloading.php
      * @param string name
      * @param array arguments
      * @return mixed
@@ -356,7 +356,7 @@ class NormalClass extends AbstractClassName implements InterfaceName
     }
 
     /**
-     * http://php.net/manual/en/language.oop5.magic.php
+     * https://php.net/manual/en/language.oop5.magic.php
      * @return array
      */
     public function __sleep()
@@ -364,7 +364,7 @@ class NormalClass extends AbstractClassName implements InterfaceName
     }
 
     /**
-     * http://php.net/manual/en/language.oop5.magic.php
+     * https://php.net/manual/en/language.oop5.magic.php
      * @return void
      */
     public function __wakeup()
@@ -372,7 +372,7 @@ class NormalClass extends AbstractClassName implements InterfaceName
     }
 
     /**
-     * http://php.net/manual/en/language.oop5.magic.php
+     * https://php.net/manual/en/language.oop5.magic.php
      * @return string
      */
     public function __toString()
@@ -380,7 +380,7 @@ class NormalClass extends AbstractClassName implements InterfaceName
     }
 
     /**
-     * http://php.net/manual/en/language.oop5.magic.php
+     * https://php.net/manual/en/language.oop5.magic.php
      * @param Type
      * @return mixed
      */
@@ -389,7 +389,7 @@ class NormalClass extends AbstractClassName implements InterfaceName
     }
 
     /**
-     * http://php.net/manual/en/language.oop5.magic.php
+     * https://php.net/manual/en/language.oop5.magic.php
      * @param array properties
      * @return object
      */
@@ -398,7 +398,7 @@ class NormalClass extends AbstractClassName implements InterfaceName
     }
 
     /**
-     * http://php.net/manual/en/language.oop5.magic.php
+     * https://php.net/manual/en/language.oop5.magic.php
      * @return array
      */
     public function __debugInfo()
