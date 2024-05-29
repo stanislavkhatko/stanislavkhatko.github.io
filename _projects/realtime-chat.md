@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Secret Realtime Chat
-description: <a href='https://secret-realtime-chat.vercel.app/'>secret-realtime-chat.vercel.app</a>
+title: Realtime Chat rooms
+description: <a href='https://secret-realtime-chat-85815e293731.herokuapp.com'>heroku</a> or <a href='https://secret-realtime-chat.vercel.app/'>vercel</a>
 img: assets/img/secret-chat/secret-chat-16.44.png
 importance: 1
 category: work
@@ -9,6 +9,12 @@ related_publications: false
 ---
 
 <div class="row">
+    <div class="col-md-12 text-center">
+        <a href="https://github.com/stanislavkhatko/secret-realtime-chat" class="btn btn-primary btn-lg" role="button" aria-pressed="true">View on GitHub</a>
+    </div>
+</div>
+
+<div class="row mt3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/secret-chat/secret-chat-16.44.png" title="Front page" class="img-fluid rounded z-depth-1" %}
     </div>
@@ -16,6 +22,7 @@ related_publications: false
 <div class="caption">
     Front (public) page of chat website
 </div>
+
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -85,4 +92,10 @@ Implemented design with black/dark theme
 
 <div class="caption">
     Profile and chat pages in black
+</div>
+
+<div class="row">
+    <div class="col-md-12 text-center">
+        <a href="https://github.com/stanislavkhatko/secret-realtime-chat" class="btn btn-primary btn-lg" role="button" aria-pressed="true">View on GitHub</a>
+    </div>
 </div>

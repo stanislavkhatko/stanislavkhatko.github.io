@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Onstruc
-description: <a href='https://web.onstruc.com'>Onstruc.com</a>
+description: <a href='https://web.onstruc.com'>web.onstruc.com</a>
 img: assets/img/onstruc/front.png
 importance: 2
 category: work

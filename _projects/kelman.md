@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Kelman map
-description: <a href='https://kelman.law/map/'>https://kelman.law/map/</a>
+description: <a href='https://kelman.law/map/'>kelman.law/map</a>
 img: assets/img/kelman/front.png
 importance: 3
 category: work
