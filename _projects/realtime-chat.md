@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Realtime Chat rooms
-description: <a href='https://secret-realtime-chat-85815e293731.herokuapp.com'>heroku</a> or <a href='https://secret-realtime-chat.vercel.app/'>vercel</a>
+description: <a href='https://secret-realtime-chat-85815e293731.herokuapp.com'>heroku</a>
 img: assets/img/secret-chat/secret-chat-16.44.png
 importance: 1
 category: work
