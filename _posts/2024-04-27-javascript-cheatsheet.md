@@ -6,6 +6,7 @@ description: Collection of most used and useful javaScript functions and methods
 tags: [ 'javascript', 'code' ]
 categories: [ 'code']
 featured: true
+giscus_comments: true
 ---
 
 List of useful javaScript.

@@ -6,6 +6,7 @@ description: Most used and useful PHP functions and methods.
 tags: [ 'php', 'code' ]
 categories: [ 'code']
 featured: true
+giscus_comments: true
 ---
 
 List of useful PHP.
