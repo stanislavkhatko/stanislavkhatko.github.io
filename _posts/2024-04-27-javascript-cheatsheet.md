@@ -5,7 +5,7 @@ date: 2024-04-27 23:37:00
 description: Collection of most used and useful javaScript functions and methods.
 tags: [ 'javascript', 'code' ]
 categories: [ 'code']
-featured: true
+featured: false
 giscus_comments: true
 ---
 

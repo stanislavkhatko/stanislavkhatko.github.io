@@ -6,9 +6,10 @@
   ></script>
   <script>
     /* Create leaflet map as another node and hide the code block, appending the leaflet node after it */
-    document.onreadystatechange = () => {
+    document.addEventListener('DOMContentLoaded', () => {
       if (document.readyState === 'complete') {
         document.querySelectorAll('pre>code.language-geojson').forEach((elem) => {
+          console.log(elem);
           const jsonData = elem.textContent;
           const backup = elem.parentElement;
           backup.classList.add('unloaded');
@@ -26,6 +27,6 @@
           map.fitBounds(geoJSON.getBounds());
         });
       }
-    };
+    });
   </script>
 {% endif %}

@@ -5,7 +5,7 @@ date: 2024-05-13 20:32:00
 description: Most used and useful PHP functions and methods.
 tags: [ 'php', 'code' ]
 categories: [ 'code']
-featured: true
+featured: false
 giscus_comments: true
 ---
 
