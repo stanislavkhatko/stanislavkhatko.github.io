@@ -7,7 +7,7 @@
     "email": "stanislavkhatko@gmail.com",
     "phone": "+380994707479",
     "url": "https://stanislavkhatko.github.io",
-    "summary": "Experienced web software engineer with over 7 years of commercial web app development experience.\nI'm interested in both frontend and backend, databases and server. \nGot a proven track of leading development teams and startups.",
+    "summary": "Experienced web software engineer with over 8 years of commercial web app development experience.\nI'm interested in both frontend and backend, databases and server. \nGot a proven track of leading development teams and startups.",
     "profiles": [
       {
         "network": "LinkedIn",
@@ -17,6 +17,15 @@
     ]
   },
   "work": [
+    {
+      "name": "Wordmemo",
+      "position": "Software Engineer",
+      "startDate": "2023-09-01",
+      "highlights": [],
+      "summary": "Released a new version of the website and the app. \n- Integrated multiple third-party services and AI tools to improve the app.",
+      "url": "https://wordmemo.net",
+      "location": "Poltava, Ukraine"
+    },
     {
       "name": "Onstruc",
       "position": "Web Software Developer",
@@ -216,6 +225,10 @@
     },
     {
       "name": "Databases",
+      "keywords": []
+    },
+    {
+      "name": "Nest.js",
       "keywords": []
     },
     {
